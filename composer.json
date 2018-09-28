@@ -2,7 +2,7 @@
     "name": "indev/pjbank",
     "description": "pacote para integracao com pjbank",
     "type": "library",
-    "minimum-stability": "1.0.0-beta",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
         "phpunit/phpunit": "^7.3"
