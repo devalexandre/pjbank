@@ -1,0 +1,33 @@
+{
+    "name": "indev/pjbank",
+    "description": "pacote para integracao com pjbank",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^7.3"
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "authors": [
+        {
+            "name": "Alexandre E. Souza",
+            "email": "alexandre@progs.net.br"
+        }
+    ],
+  "scripts" : {
+    "test" : "./vendor/bin/phpunit --testdox",
+    "travis" : "phpunit --colors --debug"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Indev\\PJBank\\": "src/"
+
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Indev\\PJBankTests\\": "tests/"
+    }
+  }
+}
