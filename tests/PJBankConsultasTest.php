@@ -19,8 +19,8 @@ class PJBankConsultasTest extends TestCase
     {
 
         $pjbank = new PJConsultas(false,false);
-        $pjbank->setApikey('20a0cf961a7539fcb7e389973e55f6e64fc3e230');
-        $pjbank->setSecret("15de9f3676c46ae29d8fc878de9aebe255b1b19c");
+        $pjbank->setApikey('d3418668b85cea70aa28965eafaf927cd34d004c');
+        $pjbank->setSecret("46e79d6d5161336afa7b98f01236efacf5d0f24b");
 
 
         $response = $pjbank->checkCredencials();
@@ -32,8 +32,8 @@ class PJBankConsultasTest extends TestCase
     public function testExtratoDeRecebimentosPorBoleto()
     {
         $pjbank = new PJConsultas(false,false);
-        $pjbank->setApikey('20a0cf961a7539fcb7e389973e55f6e64fc3e230');
-        $pjbank->setSecret("15de9f3676c46ae29d8fc878de9aebe255b1b19c");
+        $pjbank->setApikey('d3418668b85cea70aa28965eafaf927cd34d004c');
+        $pjbank->setSecret("46e79d6d5161336afa7b98f01236efacf5d0f24b");
 
 
         $response = $pjbank->getExtratoDeRecebimentosPorBoleto('01/09/2018','23/09/2018');
@@ -44,8 +44,8 @@ class PJBankConsultasTest extends TestCase
     public function testExtratoDeBoletoPorIdentificador()
     {
         $pjbank = new PJConsultas(true,false);
-        $pjbank->setApikey('20a0cf961a7539fcb7e389973e55f6e64fc3e230');
-        $pjbank->setSecret("15de9f3676c46ae29d8fc878de9aebe255b1b19c");
+        $pjbank->setApikey('d3418668b85cea70aa28965eafaf927cd34d004c');
+        $pjbank->setSecret("46e79d6d5161336afa7b98f01236efacf5d0f24b");
 
 
         $response = $pjbank->getExtratoDeBoletoPorIdentificador(7724);
