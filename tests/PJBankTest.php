@@ -72,7 +72,7 @@ class PJBankTest extends TestCase
         $pjbank->setSecret("46e79d6d5161336afa7b98f01236efacf5d0f24b");
         $emitido =   $pjbank->emitirBoletoSplit($boleto->prepare());
 
-        echo $emitido->getPedidoNumero();
+        echo $emitido->getIdUnico();
 
         $this->assertEquals(201,$emitido->getStatus());
     }

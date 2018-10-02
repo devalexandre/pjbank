@@ -8,6 +8,7 @@
 
 namespace Indev\PJBankTests;
 
+use Indev\PJBank\PJBoletoReturn;
 use Indev\PJBank\PJConsultas;
 use PHPUnit\Framework\TestCase;
 use Indev\PJBank\PJBank;
@@ -23,8 +24,11 @@ class PJBankConsultasTest extends TestCase
         $pjbank->setSecret("46e79d6d5161336afa7b98f01236efacf5d0f24b");
 
 
+
+
         $response = $pjbank->checkCredencials();
 
+        echo $response->getBody();
 
         $this->assertEquals(200,$response->getStatusCode());
     }
@@ -36,19 +40,25 @@ class PJBankConsultasTest extends TestCase
         $pjbank->setSecret("46e79d6d5161336afa7b98f01236efacf5d0f24b");
 
 
-        $response = $pjbank->getExtratoDeRecebimentosPorBoleto('01/09/2018','23/09/2018');
+
+        $response = $pjbank->getExtratoDeRecebimentosPorBoleto('01/09/2018','01/10/2018');
+
+        echo $response->getBody();
 
         $this->assertEquals(200, $response->getStatusCode());
     }
 
     public function testExtratoDeBoletoPorIdentificador()
     {
-        $pjbank = new PJConsultas(true,false);
+        $pjbank = new PJConsultas(false,false);
         $pjbank->setApikey('d3418668b85cea70aa28965eafaf927cd34d004c');
         $pjbank->setSecret("46e79d6d5161336afa7b98f01236efacf5d0f24b");
 
 
-        $response = $pjbank->getExtratoDeBoletoPorIdentificador(7724);
+        $response = $pjbank->getExtratoDeBoletoPorIdentificador(33392351);
+
+     //  $data = new PJBoletoReturn($response);
+
 
         $this->assertEquals(200, $response->getStatusCode());
     }

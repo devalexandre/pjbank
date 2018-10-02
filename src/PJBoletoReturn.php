@@ -50,9 +50,11 @@ private $registro_sistema_bancario;
      * @param $chave
      * @param $registro_sistema_bancario
      */
-    public function __construct($data)
+    public function __construct($response)
     {
-        $data = json_decode($data);
+        $data = json_decode($response->getBody());
+        $data = $data[0];
+
         $this->tipo = $data->tipo;
         $this->valor = $data->valor;
         $this->valor_pago = $data->valor_pago;
