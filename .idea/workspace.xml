@@ -92,8 +92,8 @@
       <file leaf-file-name="PJBankConsultasTest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/PJBankConsultasTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="32" />
               <folding>
                 <element signature="e#6#84#0#PHP" expanded="true" />
                 <element signature="e#116#148#0#PHP" expanded="true" />
@@ -335,7 +335,7 @@
       <workItem from="1538158878456" duration="169000" />
       <workItem from="1538161421284" duration="1293000" />
       <workItem from="1538429513600" duration="580000" />
-      <workItem from="1538480635860" duration="2046000" />
+      <workItem from="1538480635860" duration="2347000" />
     </task>
     <servers />
   </component>
@@ -372,7 +372,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36304000" />
+    <option name="totallyTimeSpent" value="36605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -384,7 +384,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5016155" side_tool="true" weight="0.32892805" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983845" visible="true" weight="0.32771823" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983845" weight="0.32771823" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" />
@@ -554,8 +554,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/PJBankConsultasTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="32" />
           <folding>
             <element signature="e#6#84#0#PHP" expanded="true" />
             <element signature="e#116#148#0#PHP" expanded="true" />
